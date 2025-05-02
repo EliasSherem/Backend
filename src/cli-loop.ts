@@ -54,6 +54,12 @@ function showUsage() {
  */
 function showTasks(): void {
   // TODO
+  const tasks = readTasks();
+  if (tasks.length === 0) {
+    console.log("No tasks found.");
+  }else{
+    console.log(tasks);
+  }
 }
 
 /**
